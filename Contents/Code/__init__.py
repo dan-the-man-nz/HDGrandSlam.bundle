@@ -7,7 +7,7 @@ SeriesSummary = SharedCodeService.PyHDHR.SeriesSummary
 
 pyhdhr = None
 
-TITLE    = 'HDGrandSlam'
+TITLE    = 'Freeview HD'
 PREFIX   = '/video/hdgrandslam'
 
 ART = 'freeviewplus.jpg'
@@ -32,7 +32,7 @@ def Start():
     EpisodeObject.thumb = R(ICON)
     VideoClipObject.thumb = R(ICON)
 
-@handler(PREFIX, TITLE, thumb=ICON)
+@handler(PREFIX, TITLE, thumb=ICON, art=ART)
 
 def MainMenu():
     global pyhdhr
