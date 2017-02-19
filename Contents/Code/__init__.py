@@ -10,6 +10,7 @@ pyhdhr = None
 TITLE    = 'HDGrandSlam'
 PREFIX   = '/video/hdgrandslam'
 
+ART = 'freeviewplus.jpg'
 ICON = 'icon.png'
 ICON_LIVETV = 'livetv.png'
 ICON_RECORDINGS = 'recordings.png'
@@ -26,7 +27,7 @@ ICON_SDCHANNELS = 'sdchannels.png'
 
 def Start():
     ObjectContainer.title1 = TITLE
-
+    ObjectContainer.art = R(ART)
     DirectoryObject.thumb = R(ICON)
     EpisodeObject.thumb = R(ICON)
     VideoClipObject.thumb = R(ICON)
